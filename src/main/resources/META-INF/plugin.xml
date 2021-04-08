@@ -1,0 +1,40 @@
+<idea-plugin>
+  <id>com.okki.gendartfile</id>
+  <name>GenDartFile</name>
+  <version>1.0</version>
+  <vendor email="tracy@xiaoman.cn" url="http://www.okki.com">GenDartFile</vendor>
+
+  <!-- 用于兼容idea2020版,同时不影响idea2019使用 -->
+  <depends>com.intellij.modules.java</depends>
+
+  <description><![CDATA[
+      根据输入名称自动生成dart文件和驼峰命名类.<br>
+      目前支持widget，model模板
+    ]]></description>
+
+  <change-notes><![CDATA[
+  V1.0<br>
+      1，可生成符合命名规范的widget类.<br>
+      2，可生成符合命名规范的model类.<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="com.okki.GenDartFile" class="GenDartFile" text="GenDartFile" >
+
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="before" relative-to-action="NewGroup"/>
+    </action>
+  </actions>
+
+</idea-plugin>
