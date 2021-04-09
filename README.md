@@ -11,3 +11,5 @@ Android Studio->Preferences->Plugins->Install Plugin from Disk
 
 2，生成代码
 选择需要生成代码的所在文件夹，右键->New->GenDartFile，输入文件名，点击确定即可
+
+![操作步骤](https://github.com/tracyis/GenDartFile/blob/master/%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4.gif)
